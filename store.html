@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information Form</title>
+</head>
+<body>
+    <h2>Customer Information Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="phone">Contact Phone No:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+        <label for="preferred-purchase">Preferred Purchasing:</label><br>
+        <input type="text" id="preferred-purchase" name="preferred-purchase"><br>
+
+        <label for="favorite-item">Favorite Item:</label><br>
+        <select id="favorite-item" name="favorite-item">
+            <option value="clothing">Clothing</option>
+            <option value="electronics">Electronics</option>
+            <option value="groceries">Groceries</option>
+            <option value="home-decor">Home Decor</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
